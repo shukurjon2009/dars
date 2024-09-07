@@ -1,0 +1,6 @@
+file = open('malumotlar.txt', 'r')
+content = file.read()
+file.close()
+words = content.split()
+longest_word = max(words, key=len)
+print(f"Fayldagi eng uzun so'z: {longest_word}")

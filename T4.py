@@ -1,0 +1,7 @@
+source_file = open('manba.txt', 'r')
+content = source_file.read()
+source_file.close()
+target_file = open('maqsad.txt', 'w')
+target_file.write(content)
+target_file.close()
+print("Ma'lumot muvaffaqiyatli ko'chirildi.")
