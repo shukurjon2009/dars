@@ -10,3 +10,4 @@ bot.command('start', (ctx) => {
 });
 
 bot.launch();
+console.log("bot ishlamoqda shukurjon")
