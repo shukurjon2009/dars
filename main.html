@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Counter</title>
+  <style>
+    body { text-align: center; margin-top: 50px; }
+    #click-count { font-size: 24px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Tap the Screen!</h1>
+  <button id="clicker">Click Me!</button>
+  <p id="click-count">Clicks: 0</p>
+
+  <script>
+    let count = 0;
+    const clickButton = document.getElementById('clicker');
+    const clickCount = document.getElementById('click-count');
+
+    clickButton.addEventListener('click', () => {
+      count++;
+      clickCount.innerText = `Clicks: ${count}`;
+      // Botga ma'lumotni yuborish joyi
+    });
+  </script>
+</body>
+</html>
